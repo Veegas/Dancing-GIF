@@ -1,0 +1,17 @@
+{
+  "name": "Random Gif",
+  "authors": [
+    "veegas <mohamed.yasser.abdel.razek@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
