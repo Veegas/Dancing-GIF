@@ -1,6 +1,9 @@
-$(window).load(function () {
+$(document).on("gif:loaded", function () {
   $(".loading-container").toggleClass("loading");
-  $(".main-container").toggleClass("loading");  
+  $(".main-container").toggleClass("loading");
+  $(".nav-bar").toggleClass("loading");
+  var audio = $("#music")[0];
+  audio.play();
 })
 
 
@@ -26,7 +29,6 @@ $(document).ready(function () {
         images.forEach(function (image) {
             createImageFromUrl(image.image_url);
         })
-
     })
 
   randomButton.on('click', function(events) {
@@ -47,6 +49,7 @@ $(document).ready(function () {
       imagesArray.push(image);
       if (imagesArray.length == 1) {
         showImage(0);
+        $(document).trigger("gif:loaded");
       }
       console.log("IMAGES ARRAY: ", imagesArray);
       console.log("currentIndex: ", currentIndex);
@@ -108,6 +111,18 @@ $(document).ready(function () {
       };
       request.send();
     });
+  }
+
+})
+
+
+$("#mute-btn").on('click', function (event) {
+  var audio = $("#music")[0];
+  if (audio.duration > 0 && !audio.paused) {
+      audio.pause();
+      $("#music").data('muted',true); //Store elements muted by the button.
+    } else {
+      audio.play();
   }
 
 })
