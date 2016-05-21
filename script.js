@@ -1,7 +1,7 @@
 $(document).on("gif:loaded", function () {
   $(".loading-container").toggleClass("loading");
   $(".main-container").toggleClass("loading");
-  $(".nav-bar").toggleClass("loading");
+  $(".nav-container").toggleClass("loading");
   var audio = $("#music")[0];
   audio.play();
 })

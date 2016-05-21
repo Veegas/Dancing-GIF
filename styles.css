@@ -1,12 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,100italic,100,400);
-
 body {
   font-family: Lato;
 }
 .text-center {
   text-align: center;
 }
-
 .random-img {
   height: 70%;
 }
@@ -15,41 +13,39 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .centered-flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .loading {
   opacity: 0;
 }
-
 .loading-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .buttons-container {
   padding-top: 15px;
 }
-
 .button-big {
   font-size: 3em;
   height: auto;
   padding: 2%;
 }
-
 .nav-container {
   display: flex;
   align-items: flex-end;
 }
-
 .nav-icon-container {
   width: auto;
   padding: 5px 1%;
   cursor: pointer;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
