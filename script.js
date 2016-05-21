@@ -1,6 +1,6 @@
 $(window).load(function () {
   $(".loading-container").toggleClass("loading");
-  $(".main-container").toggleClass("loading");
+  $(".main-container").toggleClass("loading");  
 })
 
 
